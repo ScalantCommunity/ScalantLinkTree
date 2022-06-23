@@ -49,7 +49,7 @@ const App = () => {
       <a
         className="button"
         target="_blank"
-        href="https://www.linkedin.com/company/scalant-official/mycompany/"
+        href="https://www.linkedin.com/company/scalant-official/"
       >
         <div className="link2  link_profile">
           <i className="icons uil uil-linkedin" />
