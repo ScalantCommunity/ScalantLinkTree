@@ -13,14 +13,27 @@ const App = () => {
         <span></span>
     </div>
 </div>
-  <div className="container">
+  <a href='https://scalant.in' target='_blank' className="container">
     <img style={{zIndex:'100', height:'9.5rem'}}  className="profile" src={profile} />
-  </div>
+  </a>
   <div style={{marginTop:'2.5rem', marginBottom:'0px'}} className="text">
     <p style={{color:'#fff', fontSize:'2rem', fontWeight:'600', marginBottom:'0px'}}>SCALANT</p>
   </div>
   <div className="box">
     <div className="links">
+     
+    <a
+        className="button"
+        target="_blank"
+        href="https://discord.gg/MKM6hBjz88"
+      >
+        <div className="link2  link_profile">
+          <i className="icons uil uil-discord" />
+          <p className="info">Discord</p>
+        </div>
+      </a>
+
+      
       <a
         className="button"
         target="_blank"
@@ -31,6 +44,8 @@ const App = () => {
           <p className="info">Github</p>
         </div>
       </a>
+
+     
       <a
         className="button"
         target="_blank"
@@ -41,6 +56,8 @@ const App = () => {
           <p className="info">LinkedIn</p>
         </div>
       </a>
+
+     
       <a
         className="button"
         target="_blank"
@@ -51,16 +68,8 @@ const App = () => {
           <p className="info">Instagram</p>
         </div>
       </a>
-      <a
-        className="button"
-        target="_blank"
-        href="https://discord.gg/MKM6hBjz88"
-      >
-        <div className="link2  link_profile">
-          <i className="icons uil uil-discord" />
-          <p className="info">Discord</p>
-        </div>
-      </a>
+      
+     
       <a
         className="button"
         target="_blank"
