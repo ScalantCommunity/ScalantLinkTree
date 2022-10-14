@@ -23,7 +23,7 @@ You could host this project yourself or on any free frontend hosting provider, l
   ```
   yarn run preview
   ```
-- You could open the application at http://127.0.0.1:4173/ !
+- You could open the application at the localhost link outputed to console!
 - To have the project re-build to reflect changes as you make them, use the following command-
   ```
   yarn run dev
