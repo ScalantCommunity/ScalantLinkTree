@@ -1,10 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
+:root{
+	--primary-color: white;
+	--second-color: black;
+	--linear-gradent-home: linear-gradient(to right , #081924,#20242a);
+	--hover-color: #20242a;
+	--border-color: #111;
+	/* #20242a */
+}
+
+.white-theme{
+	--primary-color: black;
+	--second-color: white;
+	--linear-gradent-home: linear-gradient(to right , white,white);
+	--hover-color: #9a9da1;
+	--border-color: #111111;
+}
+
+.dark-theme{
+	--primary-color: white;
+	--second-color: black;
+	--linear-gradent-home: linear-gradient(to right , #081924,#20242a);
+	--hover-color: #20242a;
+	--border-color: #111;
+	/* #20242a */
+}
+
+
 body{
-	background-image: linear-gradient(to right , #081924,#20242a);
+	background-image: var(--linear-gradent-home);
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+
+.scalant_name{
+	color: var(--primary-color);
+	font-size: 2rem;
+	font-weight: 600;
+	margin-top: 4rem;
+	margin-bottom: 0px;
+}
+
+#darkMode{
+	width: 25px;
+	position: absolute;
+	top: 30px;
+	right: 60px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+#darkMode:hover{
+	transform: scale(1.2);
+}
+
 .container{
 	margin-top: 50px;
 	display: flex;
@@ -30,23 +79,23 @@ body{
 	justify-content: center;
 }
 .icons{
-	color: white;
+	color: var(--primary-color);
 	font-size: 50px;
 	margin-left: 5px;
 }
 .info{
-	color: white;
+	color: var(--primary-color);
 	font-size: 25px;
 	margin-left: 255px;
 }
 .link_profile{
 	display: flex;
 	align-items: center;
-/*	border:3px solid white;*/
+	border: 1px solid var(--border-color);
 	width: 700px;
 	height: 60px;
 	margin-top: 15px;
-	background-color: black;
+	background-color: var(--second-color);
 	opacity: 0.7;
 	border-radius: 10px;
 	transition: 0.3s;
@@ -57,7 +106,7 @@ body{
 	margin:auto;
 }
 .link_profile:hover{
-	background-color: #20242a;
+	background-color: var(--hover-color);
   transform:scale(1.05);
 	-webkit-box-shadow:inset 0px 0px 0px 1px #fff;
     -moz-box-shadow:inset 0px 0px 0px 1px #fff;
@@ -65,7 +114,7 @@ body{
 
 }
 .footer{
-	color: white;
+	color: var(--primary-color);
 	font-size: 20px;
 	font-weight: 300;
 }
@@ -85,6 +134,10 @@ body{
      	margin-left: 65px;
        
      }
+	 #darkMode{
+		width: 20px;
+		right: 30px;
+	}
 }
 
 :root {
@@ -103,7 +156,7 @@ body{
 	position: absolute;
   left:0;
   right:0;
-	top: 8rem;
+	top: 8.5rem;
 	background: var(--loader-gradient);
 	background-size: 400% 400%;
 
